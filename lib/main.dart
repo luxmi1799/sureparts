@@ -35,6 +35,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   WebViewController? controller;
 
+  @override
+  void initState() {
+    super.initState();
+    // Enable virtual display.
+    if (Platform.isAndroid) WebView.platform = AndroidWebView();
+  }
+
+
   final Completer<WebViewController> _controllerCompleter =
   Completer<WebViewController>();
 
