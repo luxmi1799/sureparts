@@ -37,6 +37,9 @@ dependencies:
   webview_flutter: ^3.0.4
   path_provider: ^2.0.11
   flutter_launcher_icons: ^0.10.0
+  internet_connection_checker: ^1.0.0+1
+  connectivity_plus: ^3.0.3
+  file: ^6.1.4
 
 dev_dependencies:
   flutter_test:
